@@ -23,4 +23,4 @@ def ticker_combinations(full_info, pivoted_return, country_list, industry_list):
                 p_value = coint(pair_return.iloc[:,0], pair_return.iloc[:,1])[1]
                 if p_value <= 0.1:
                     useful_pairs.append(pair)
-            
+    return useful_pairs   
